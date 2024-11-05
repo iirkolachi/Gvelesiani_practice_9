@@ -3,23 +3,24 @@ import java.util.Iterator;
 
 public class Task5 {
     public static void main(String[] args) {
-        ArrayList<String> fruits = new ArrayList<>();
-        fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Cherry");
+        ArrayList<String> xili = new ArrayList<>();
+        xili.add("ვაშლი");
+        xili.add("მსხალი");
+        xili.add("ატამი");
+        System.out.println("ჩემი საყვარელი ხილია " + xili.get(2) + " ♥");
 
-        for (String fruit : fruits) {
+        for (String fruit : xili) {
             System.out.println(fruit);
         }
-        for (int i = 0; i < fruits.size(); i++) {
-            System.out.println(fruits.get(i));
+        for (int i = 0; i < xili.size(); i++) {
+            System.out.println(xili.get(i));
         }
-        Iterator<String> iterator = fruits.iterator();
+        Iterator<String> iterator = xili.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-        fruits.forEach(fruit -> System.out.println(fruit));
+        xili.forEach(fruit -> System.out.println(fruit));
 
-        fruits.forEach(System.out::println);
+        xili.forEach(System.out::println);
     }
 }
