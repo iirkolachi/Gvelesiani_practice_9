@@ -12,13 +12,13 @@ public class Wrapper <T> {
     }
 
     public static void main(String[] args) {
-        Wrapper<String> stringWrapper = new Wrapper<>("Hello World");
+        Wrapper<String> stringWrapper = new Wrapper<>("ჯავას კურსი თითქმის დაასრულე!");
         System.out.println("String value: " + stringWrapper.getValue());
 
-        Wrapper<Double> doubleWrapper = new Wrapper<>(3.14);
+        Wrapper<Double> doubleWrapper = new Wrapper<>(99.9);
         System.out.println("Double value: " + doubleWrapper.getValue());
 
-        stringWrapper.setValue("Goodbye");
+        stringWrapper.setValue("დარჩა ერთი დავალება!");
         System.out.println("Updated String value: " + stringWrapper.getValue());
     }
 }
