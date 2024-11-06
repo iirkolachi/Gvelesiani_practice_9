@@ -7,10 +7,8 @@ public class Task1 {
 
         List<String> namesFiltered = names.stream()
                                     .filter(item -> item.contains("e"))
-                                    .toList(); /*collect(Collectors.toList());
-                                                 ინტელიჯეიმ შემომთავაზა ოპტიმიზაცია*/
+                                    .toList();
 
-        namesFiltered.forEach(System.out::println); /*(item -> System.out.println(item));
-                                                               ინტელიჯეიმ შემომთავაზა ოპტიმიზაცია*/
+        namesFiltered.forEach(System.out::println); //(item -> System.out.println(item));
     }
 }
